@@ -7,7 +7,6 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ProfileDesc from "@/components/Profile/ProfileDesc";
 import ProfilePic from "@/components/Profile/ProfilePic";
-import ContactView from "@/components/Profile/ContactView";
 
 export default function Home() {
 	const section1 = useRef<null | HTMLDivElement>(null);
@@ -56,33 +55,6 @@ export default function Home() {
         
       </motion.section>
 
-      {/* Projects Section */}
-	  		<motion.section
-				ref={section3}
-				id="section3"
-				className="h-[57%] sm:h-full bg-gray-50 border border-black/5 flex flex-col justify-between items-center p-8 relative shadow-sm cursor-grab"
-				initial="offscreen"
-				whileInView="onscreen"
-        viewport={{ once: true, amount: 0.2 }}
-			>
-        <ContactView />
-
-      {/* Contact Section */}
-      <section
-				ref={section4}
-				id="section4"
-				className="flex flex-col items-center justify-center h-screen mt-10"
-			>
-				<div className="font-bold text-8xl">
-					<h1>搭建中</h1>
-				</div>
-			</section>
-			<NextPageButton
-				section1Ref={section1}
-				section2Ref={section2}
-				section3Ref={section3}
-        		section4Ref={section4}
-			/>
-		</main>
+      
 	);
 }
