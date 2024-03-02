@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ProfileDesc from "@/components/Profile/ProfileDesc";
 import ProfilePic from "@/components/Profile/ProfilePic";
+import ProgrammingLang from "@/components/Profile/ProgrammingLang";
 
 export default function Home() {
 	const section1 = useRef<null | HTMLDivElement>(null);
@@ -65,7 +66,7 @@ export default function Home() {
 					<h1>Section 3</h1>
 				</div>
 			</section>
-
+		<ProgrammingLang />
       {/* Contact Section */}
       <section
 				ref={section4}
@@ -80,7 +81,7 @@ export default function Home() {
 				section1Ref={section1}
 				section2Ref={section2}
 				section3Ref={section3}
-        section4Ref={section4}
+        		section4Ref={section4}
 			/>
 		</main>
 	);
