@@ -62,7 +62,7 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen"
 			>
 				<div className="font-bold text-8xl">
-					<h1>Section 3</h1>
+					<h1>本版块搭建中</h1>
 				</div>
 			</section>
 
@@ -73,14 +73,15 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen mt-10"
 			>
 				<div className="font-bold text-8xl">
-					<h1>Section 4</h1>
+					<h1>本版块搭建中</h1>
 				</div>
+				<p>敬请期待<p/>
 			</section>
 			<NextPageButton
 				section1Ref={section1}
 				section2Ref={section2}
 				section3Ref={section3}
-        section4Ref={section4}
+        		section4Ref={section4}
 			/>
 		</main>
 	);
