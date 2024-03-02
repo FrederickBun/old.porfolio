@@ -70,7 +70,7 @@ export default function Home() {
 				whileInView="onscreen"
         viewport={{ once: true, amount: 0.2 }}
 			>
-        <ProgrammingLang />
+        <ProfileDesc />
         
       </motion.section>
       {/* Contact Section */}
