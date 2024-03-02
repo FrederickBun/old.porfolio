@@ -102,7 +102,10 @@ export default function ProfileDesc() {
 						作为一名信竞选手，C++自然是不多说的～不过我闲时也喜欢做前端设计与开发。
 					</p>
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						很高兴在这里与你见面！！如果你想联系我，可以发邮箱至 
+						Nice to meet you!
+					</p>
+					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
+						如果你想联系我，可以发邮箱至：
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-green-500 font-semibold">
 							<a href="mailto:seventeen@ohdragonboi.cn">seventeen@ohdragonboi.cn </a>
 						</span>
