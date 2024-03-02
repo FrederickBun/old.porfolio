@@ -75,7 +75,6 @@ export default function Home() {
 				<div className="font-bold text-8xl">
 					<h1>本版块搭建中</h1>
 				</div>
-				<p>敬请期待<p/>
 			</section>
 			<NextPageButton
 				section1Ref={section1}
