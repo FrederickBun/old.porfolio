@@ -9,146 +9,47 @@ type Props = {
 	img: string;
 };
 
-export default function ProgrammingLang() {
-	const [isExpanded, setIsExpanded] = useState(false);
-	const scope = useMenuAnimation(isExpanded);
-
-	const toggleExpand = () => {
-		setIsExpanded(!isExpanded);
-	};
+export default function ProgrammingLang(props: Props) {
+	const { lang, level, url, img } = props;
 
 	return (
-		<motion.div
-			variants={{
-				offscreen: {
-					opacity: 0,
-					x: 100,
-				},
-				onscreen: {
-					opacity: 1,
-					x: 0,
-					transition: {
-						delay: 0.6,
-						type: "spring",
-						stiffness: 400,
-						damping: 17,
-						duration: 0.1,
-					},
-				},
-			}}
-			className="h-[57%] sm:h-full bg-gray-50 border border-black/5 flex flex-col justify-between items-center p-8 relative shadow-sm cursor-grab"
-		>
-			<div className="relative h-full w-full sm:w-96">
-				<p className="text-left text-gray-800 text-3xl font-bold border-b-2 border-gray-200 pb-1 cursor-text">
-				console.log("Hello 👋");
-				</p>
-				<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2 cursor-text">
-					我叫{" "}
-					<span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-yellow-500 font-bold">
-						Frederick Chen
-					</span>
-					。
-				</p>
-
-				<div className="cursor-text">
-					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						我是一个来自重庆{" "}
-						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500 font-semibold">
-							西南大学附属中学
-						</span>
-						的OIer～
-					</p>
-					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						喜欢做前端设计与开发。
-					</p>
-					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						很高兴在这里与你相遇！！
-					</p>
-				</div>
-			</div>
-
-			{/* Programming Lang */}
-			<div
-				className="w-full flex flex-col gap-2 justify-between top-0 left-0"
-				ref={scope}
-			>
+		<div id="lang-item" className="flex flex-row justify-between items-center w-full">
+			<div className="flex flex-row items-center gap-2">
 				<motion.div
-					id="list"
-					className="flex flex-col justify-center gap-2 w-full p-8 absolute top-0 left-0 right-0 bottom-28 bg-gray-100 cursor-auto overflow-y-auto"
-					style={{
-						pointerEvents: isExpanded ? "auto" : "none",
-						clipPath: "inset(0% 0% 50% 0%)",
-					}}
-				>
-					<div
-						id="lang-item"
-						className="flex flex-row justify-between pb-1 items-center border-b-2 border-gray-200 mt-52 sm:mt-0"
-					>
-						<p className="text-lg font-semibold">Skill Name</p>
-						<p className="text-gray-500 text-lg">Level</p>
-					</div>
-					<ProgrammingLang
-						lang="HTML"
-						level={5}
-						url="https://html.com/"
-						img="/html.png"
-					/>
-					<ProgrammingLang
-						lang="CSS"
-						level={5}
-						url="https://www.w3.org/Style/CSS/Overview.en.html"
-						img="/css.png"
-					/>
-					<ProgrammingLang
-						lang="JavaScript"
-						level={5}
-						url="https://www.javascript.com/"
-						img="/js.png"
-					/>
-					<ProgrammingLang
-						lang="TypeScript"
-						level={2}
-						url="https://www.typescriptlang.org/"
-						img="/ts.png"
-					/>
-					<ProgrammingLang
-						lang="Next.js"
-						level={5}
-						url="https://nextjs.org/"
-						img="/nextjs.png"
-					/>
-				</motion.div>
-				<motion.button
-					className="bg-white/50 border border-gray-200 font-bold py-2 px-4 shadow-lg flex items-center justify-center"
-					onClick={toggleExpand}
-					whileHover={{ scale: 1.05 }}
-					whileTap={{ scale: 0.95 }}
+					className="border border-gray-200 p-2 flex flex-col gap-2 items-center justify-center bg-white/50 shadow-lg cursor-pointer"
+					onClick={() => window.open(url, "_blank")}
+					whileHover={{ scale: 1.1 }}
+					whileTap={{ scale: 0.9 }}
 					transition={{
 						type: "spring",
 						stiffness: 400,
 						damping: 17,
 					}}
 				>
-					Skills
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="2.5"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						className="feather feather-chevron-left ml-1"
-						style={{
-							transformOrigin: "50% 50%",
-						}}
-					>
-						<polyline points="15 18 9 12 15 6"></polyline>
-					</svg>
-				</motion.button>
+					<Image src={img} alt={lang} width={32} height={32} />
+				</motion.div>
+
+				<p className="text-center text-gray-800 text-lg font-semibold">
+					{lang}
+				</p>
 			</div>
-		</motion.div>
+
+			{/* Level Display */}
+
+			<div className="flex flex-row items-center gap-1">
+				{Array.from(Array(level).keys()).map((i) => (
+					<div
+						key={i}
+						className="w-3.5 h-5 rounded-md bg-green-600"
+					></div>
+				))}
+				{Array.from(Array(5 - level).keys()).map((i) => (
+					<div
+						key={i}
+						className="w-3.5 h-5 rounded-md bg-gray-200"
+					></div>
+				))}
+			</div>
+		</div>
 	);
 }
