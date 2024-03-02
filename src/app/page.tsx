@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ProfileDesc from "@/components/Profile/ProfileDesc";
 import ProfilePic from "@/components/Profile/ProfilePic";
+import ContactView from "@/components/Profile/ContactView";
 
 export default function Home() {
 	const section1 = useRef<null | HTMLDivElement>(null);
@@ -56,15 +57,20 @@ export default function Home() {
       </motion.section>
 
       {/* Projects Section */}
-			<section
+	  		<motion.section
 				ref={section3}
 				id="section3"
-				className="flex flex-col items-center justify-center h-screen"
+				className="flex flex-col sm:flex-row items-center justify-center h-screen w-full sm:w-4/5 p-2 sm:p-20 gap-4 sm:gap-10 "
+        // style={{
+        //   backgroundImage: "linear-gradient(to right, rgb(243,244,246) 1.2px, transparent 1.2px), linear-gradient(to bottom, rgb(243,244,246) 1.2px, transparent 1.2px);",
+        //   backgroundSize: "20px 20px",
+        //   backgroundPosition: "-10px -10px",
+        // }}
+				initial="offscreen"
+				whileInView="onscreen"
+        viewport={{ once: true, amount: 0.2 }}
 			>
-				<div className="font-bold text-8xl">
-					<h1>Section 3</h1>
-				</div>
-			</section>
+        <ContactView />
 
       {/* Contact Section */}
       <section
@@ -73,9 +79,7 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen mt-10"
 			>
 				<div className="font-bold text-8xl">
-					<h1>Contact Me</h1>
-					<p>Email: <a href="mailto:seventeen@ohdragonboi.cn">seventeen@ohdragonboi.cn</a></p>
-					<p>爱发电: <a href="https://afdian.net/se7entin">FrederickAsYou</a></p>
+					<h1>搭建中</h1>
 				</div>
 			</section>
 			<NextPageButton
