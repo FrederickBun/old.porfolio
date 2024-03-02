@@ -109,7 +109,7 @@ export default function ProfileDesc() {
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-green-500 font-semibold">
 							<a href="mailto:seventeen@ohdragonboi.cn">seventeen@ohdragonboi.cn </a>
 						</span>
-						，期待与你相识～
+						😃期待与你相识～
 					</p>
 				</div>
 			</div>
@@ -131,8 +131,8 @@ export default function ProfileDesc() {
 						id="lang-item"
 						className="flex flex-row justify-between pb-1 items-center border-b-2 border-gray-200 mt-52 sm:mt-0"
 					>
-						<p className="text-lg font-semibold">Skill Name</p>
-						<p className="text-gray-500 text-lg">Level</p>
+						<p className="text-lg font-semibold">技能</p>
+						<p className="text-gray-500 text-lg">等级</p>
 					</div>
 					<ProgrammingLang
 						lang="HTML"
