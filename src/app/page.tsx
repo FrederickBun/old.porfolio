@@ -55,6 +55,33 @@ export default function Home() {
         
       </motion.section>
 
-      
+      {/* Projects Section */}
+			<section
+				ref={section3}
+				id="section3"
+				className="flex flex-col items-center justify-center h-screen"
+			>
+				<div className="font-bold text-8xl">
+					<h1>Section 3</h1>
+				</div>
+			</section>
+
+      {/* Contact Section */}
+      <section
+				ref={section4}
+				id="section4"
+				className="flex flex-col items-center justify-center h-screen mt-10"
+			>
+				<div className="font-bold text-8xl">
+					<h1>Section 4</h1>
+				</div>
+			</section>
+			<NextPageButton
+				section1Ref={section1}
+				section2Ref={section2}
+				section3Ref={section3}
+        section4Ref={section4}
+			/>
+		</main>
 	);
 }
