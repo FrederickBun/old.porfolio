@@ -66,7 +66,7 @@ export default function Home() {
 					<h1>Section 3</h1>
 				</div>
 			</section>
-		<ProgrammingLang />
+		<ProfileDesc />
       {/* Contact Section */}
       <section
 				ref={section4}
