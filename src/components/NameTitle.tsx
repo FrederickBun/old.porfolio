@@ -64,7 +64,7 @@ export default function NameTitle() {
             drag
             dragConstraints={dragConstraints}
 		>
-			<div className="font-bold text-4xl sm:text-8xl px-6 py-4 border border-black/5 bg-gray-50">
+			<div className="text-4xl sm:text-8xl px-6 py-4 border border-black/5 bg-gray-50 font-bold">
 				<h1>Frederick Chen</h1>
 			</div>
 		</motion.div>

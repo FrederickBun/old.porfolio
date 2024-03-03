@@ -2,6 +2,7 @@
 import Image from "next/image";
 import NameTitle from "@/components/NameTitle";
 import ThisIsTitle from "@/components/ThisIsTitle";
+import IntroduceTitle from "@/components/IntroduceTitle";
 import NextPageButton from "@/components/NextPageButton";
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -34,6 +35,7 @@ export default function Home() {
 			>
 				<ThisIsTitle />
 				<NameTitle />
+				<IntroduceTitle />
 			</section>
 
       {/* Profile Section */}
@@ -62,7 +64,7 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen"
 			>
 				<div className="font-bold text-8xl">
-					<h1>本版块搭建中</h1>
+					<h1>Stay tuned!</h1>
 				</div>
 			</section>
 
@@ -73,7 +75,7 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen mt-10"
 			>
 				<div className="font-bold text-8xl">
-					<h1>本版块搭建中</h1>
+					<h1>Stay tuned!</h1>
 				</div>
 			</section>
 			<NextPageButton

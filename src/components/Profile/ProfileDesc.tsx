@@ -79,37 +79,34 @@ export default function ProfileDesc() {
 			className="h-[57%] sm:h-full bg-gray-50 border border-black/5 flex flex-col justify-between items-center p-8 relative shadow-sm cursor-grab"
 		>
 			<div className="relative h-full w-full sm:w-96">
-				<p className="text-left text-gray-800 text-3xl font-bold border-b-2 border-gray-200 pb-1 cursor-text">
+				<p className="text-left text-gray-800 text-3xl border-b-2 border-gray-200 pb-1 cursor-text font-bold">
 				console.log("Hello 👋");
 				</p>
-				<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2 cursor-text">
-					我叫{" "}
+				<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2 cursor-text font-bold">
+					I'm{" "}
 					<span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-yellow-500 font-bold">
 						Frederick Chen
 					</span>
-					。
+					 😜.
 				</p>
 
 				<div className="cursor-text">
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						我是一个来自重庆{" "}
+						I'm a front-end developer from{" "}
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500 font-semibold">
-							西南大学附属中学
+							Beibei
 						</span>
-						的OIer～
+						, Chongqing, China.
 					</p>
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						作为一名信竞选手，C++自然是不多说的～不过我闲时也喜欢做前端设计与开发。
-					</p>
-					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						Nice to meet you!
-					</p>
-					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						如果你想联系我，可以发邮箱至：
+						Currently, I study in the{" "}
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-green-500 font-semibold">
-							<a href="mailto:seventeen@ohdragonboi.cn">seventeen@ohdragonboi.cn </a>
+							affiliated High School of Southwest University
 						</span>
-						😃期待与你相识～
+					    . I'm also an OI player, so knowing C++ is inevitable.
+					</p>
+					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
+						Nice to meet you 🎱🏓!
 					</p>
 				</div>
 			</div>
@@ -131,8 +128,8 @@ export default function ProfileDesc() {
 						id="lang-item"
 						className="flex flex-row justify-between pb-1 items-center border-b-2 border-gray-200 mt-52 sm:mt-0"
 					>
-						<p className="text-lg font-semibold">技能</p>
-						<p className="text-gray-500 text-lg">等级</p>
+						<p className="text-lg font-semibold">Skill Name</p>
+						<p className="text-gray-500 text-lg">Level</p>
 					</div>
 					<ProgrammingLang
 						lang="HTML"
@@ -148,7 +145,7 @@ export default function ProfileDesc() {
 					/>
 					<ProgrammingLang
 						lang="JavaScript"
-						level={5}
+						level={3}
 						url="https://www.javascript.com/"
 						img="/js.png"
 					/>
@@ -160,7 +157,7 @@ export default function ProfileDesc() {
 					/>
 					<ProgrammingLang
 						lang="Next.js"
-						level={5}
+						level={4}
 						url="https://nextjs.org/"
 						img="/nextjs.png"
 					/>
