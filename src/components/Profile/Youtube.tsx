@@ -67,7 +67,7 @@ export default function NameTitle() {
 			<div className="text-2xl sm:text-4xl px-6 py-4 border border-black/5 bg-gray-50 font-bold">
 				<p>Youtube: </p>
                 <span className=" bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500 font-bold">
-					<a href="https://www.youtube.com/@Fredgg0017">@FrederickAsYou</a>
+					<a href="https://www.youtube.com/@Fredgg0017">@Fredgg0017</a>
 				</span>
 			</div>
 		</motion.div>
