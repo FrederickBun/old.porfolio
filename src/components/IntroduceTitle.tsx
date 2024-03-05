@@ -9,12 +9,12 @@ export default function ThisIsTitle() {
         hidden: {
             scale: 1,
             opacity: 0,
-            x: 200,
+            x: 0,
         },
         visible: {
             scale: 1,
             opacity: 1,
-            x: 600,
+            x: 100,
             transition: {
                 delay: 0,
                 type: "spring",
@@ -27,12 +27,12 @@ export default function ThisIsTitle() {
         hidden: {
             scale: 1,
             opacity: 0,
-            x: 200,
+            x: 0,
         },
         visible: {
             scale: 1,
             opacity: 1,
-            x: 600,
+            x: 100,
             transition: {
                 delay: 0,
                 type: "spring",

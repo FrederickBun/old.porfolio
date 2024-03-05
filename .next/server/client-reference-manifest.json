@@ -131,14 +131,6 @@
       ],
       "async": false
     },
-    "/Users/se7entin/Documents/Repository/portfolio-v2/src/app/page.tsx": {
-      "id": "(app-client)/./src/app/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/se7entin/Documents/Repository/portfolio-v2/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
       "name": "*",
@@ -154,12 +146,20 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "/Users/se7entin/Documents/Repository/portfolio-v2/src/app/page.tsx": {
+      "id": "(app-client)/./src/app/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/se7entin/Documents/Repository/portfolio-v2/src/app/page": [],
     "/Users/se7entin/Documents/Repository/portfolio-v2/src/app/layout": [
       "static/css/app/layout.css"
-    ]
+    ],
+    "/Users/se7entin/Documents/Repository/portfolio-v2/src/app/page": []
   }
 }

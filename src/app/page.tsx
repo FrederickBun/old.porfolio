@@ -8,6 +8,9 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ProfileDesc from "@/components/Profile/ProfileDesc";
 import ProfilePic from "@/components/Profile/ProfilePic";
+import Mail from "@/components/Profile/Mail";
+import Github from "@/components/Profile/Github";
+import Youtube from "@/components/Profile/Youtube"
 
 export default function Home() {
 	const section1 = useRef<null | HTMLDivElement>(null);
@@ -72,11 +75,12 @@ export default function Home() {
       <section
 				ref={section4}
 				id="section4"
-				className="flex flex-col items-center justify-center h-screen mt-10"
+				className="flex flex-col items-left justify-center h-screen pb-12 gap-[-2px] "
 			>
-				<div className="font-bold text-8xl">
-					<h1>Stay tuned!</h1>
-				</div>
+				
+				<Mail />
+				<Github />
+				<Youtube />
 			</section>
 			<NextPageButton
 				section1Ref={section1}

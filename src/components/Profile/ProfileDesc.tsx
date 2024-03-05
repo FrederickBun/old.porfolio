@@ -101,12 +101,12 @@ export default function ProfileDesc() {
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
 						Currently, I study in the{" "}
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-green-500 font-semibold">
-							affiliated High School of Southwest University
+							Affiliated High School of Southwest University
 						</span>
 					    . I'm also an OI player, so knowing C++ is inevitable.
 					</p>
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
-						Nice to meet you 🎱🏓!
+						Nice to meet you 💎!
 					</p>
 				</div>
 			</div>
