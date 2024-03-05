@@ -67,7 +67,7 @@ export default function Home() {
 				className="flex flex-col items-center justify-center h-screen"
 			>
 				<div className="font-bold text-8xl">
-					<h1>Stay tuned!</h1>
+					<h1>Under construction</h1>
 				</div>
 			</section>
 
