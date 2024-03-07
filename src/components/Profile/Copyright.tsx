@@ -65,10 +65,10 @@ export default function NameTitle() {
             dragConstraints={dragConstraints}
 		>
 			<div className="text-0.5xl sm:text-1xl px-6 py-4 border border-black/5 bg-gray-50 font-bold">
-                <p align="center"> 
+                <p> 
                     Copyright 2023-2024 Frederick Chen
                 </p>
-                <p align="center"> 
+                <p> 
                     Made with ❤️
                 </p>
 			</div>
