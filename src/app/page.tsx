@@ -11,6 +11,7 @@ import ProfilePic from "@/components/Profile/ProfilePic";
 import Mail from "@/components/Profile/Mail";
 import Github from "@/components/Profile/Github";
 import Youtube from "@/components/Profile/Youtube"
+import Copyright from "@/components/Profile/Copyright";
 
 export default function Home() {
 	const section1 = useRef<null | HTMLDivElement>(null);
@@ -82,6 +83,7 @@ export default function Home() {
 				<Github />
 				<Youtube />
 			</section>
+			<Copyright />
 			<NextPageButton
 				section1Ref={section1}
 				section2Ref={section2}
