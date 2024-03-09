@@ -71,6 +71,7 @@ export default function NameTitle() {
                 <p> 
                     Made with ❤️
                 </p>
+                <a href="https://icp.gov.moe/?keyword=20245128" target="_blank">萌ICP备20245128号</a>
 			</div>
 		</motion.div>
 	);
