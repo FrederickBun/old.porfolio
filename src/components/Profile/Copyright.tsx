@@ -64,14 +64,13 @@ export default function NameTitle() {
             drag
             dragConstraints={dragConstraints}
 		>
-			<div className="text-0.5xl sm:text-1xl px-6 py-4 border border-black/5 bg-gray-50 font-bold">
+			<div className="cursor-text">
                 <p> 
                     Copyright 2023-2024 Frederick Chen
                 </p>
                 <p> 
                     Made with ❤️
                 </p>
-                <img src='/frederick-number-logo-final-@2x-animited.svg'/>
                 <a href="https://icp.gov.moe/?keyword=20245128" target="_blank">萌ICP备20245128号</a>
 			</div>
 		</motion.div>

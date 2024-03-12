@@ -108,6 +108,7 @@ export default function ProfileDesc() {
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
 						Nice to meet you 💎!
 					</p>
+					<img src='/frederick-number-logo-final-@2x-animited.svg'/>
 				</div>
 			</div>
 
