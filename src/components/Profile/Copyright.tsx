@@ -64,7 +64,7 @@ export default function NameTitle() {
             drag
             dragConstraints={dragConstraints}
 		>
-			<div className="cursor-text">
+			<div className="text-0.5xl sm:text-1xl px-6 py-4 border border-black/5 bg-gray-50 font-bold cursor-text">
                 <p> 
                     Copyright 2023-2024 Frederick Chen
                 </p>
