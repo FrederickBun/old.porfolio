@@ -101,7 +101,7 @@ export default function ProfileDesc() {
 					<p className="text-left text-gray-800 text-xl font-normal pt-2 mt-2">
 						Currently, I study in the{" "}
 						<span className=" bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-green-500 font-semibold">
-							Affiliated High School of Southwest University
+							High School Affiliated to Southwest University
 						</span>
 					    . I'm also an OI player, so knowing C++ is inevitable.
 					</p>
@@ -144,22 +144,28 @@ export default function ProfileDesc() {
 						img="/css.png"
 					/>
 					<ProgrammingLang
+						lang="Next.js"
+						level={5}
+						url="https://nextjs.org/"
+						img="/nextjs.png"
+					/>
+					<ProgrammingLang
 						lang="JavaScript"
-						level={3}
+						level={4}
 						url="https://www.javascript.com/"
 						img="/js.png"
 					/>
 					<ProgrammingLang
 						lang="TypeScript"
-						level={2}
+						level={3}
 						url="https://www.typescriptlang.org/"
 						img="/ts.png"
 					/>
 					<ProgrammingLang
-						lang="Next.js"
-						level={4}
-						url="https://nextjs.org/"
-						img="/nextjs.png"
+						lang="React"
+						level={1}
+						url="https://react.dev/"
+						img="/react.png"
 					/>
 				</motion.div>
 				<motion.button

@@ -83,7 +83,6 @@ export default function Home() {
 				<Github />
 				<Youtube />
 			</section>
-			<Copyright />
 			<NextPageButton
 				section1Ref={section1}
 				section2Ref={section2}
