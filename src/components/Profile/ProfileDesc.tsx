@@ -132,6 +132,12 @@ export default function ProfileDesc() {
 						<p className="text-gray-500 text-lg">Level</p>
 					</div>
 					<ProgrammingLang
+						lang="Python"
+						level={1}
+						url="https://python.org/"
+						img="/py.png"
+					/>
+					<ProgrammingLang
 						lang="HTML"
 						level={5}
 						url="https://html.com/"
